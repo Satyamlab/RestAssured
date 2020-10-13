@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User generates token for Authorisation",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am an authorise user",
+            "match": {
+              "location": "stepDefination.defination.i_am_an_authorise_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-15T10:23:09.032Z",
+        "line": 9,
+        "name": "Authorise user is able to Add and Remove a book",
+        "description": "",
+        "id": "end-to-end-tests-for;authorise-user-is-able-to-add-and-remove-a-book",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1040900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "A list of book are available",
+            "match": {
+              "location": "stepDefination.defination.a_list_of_book_are_available()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I add a book to my reading list",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 995600,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "The book is added",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I remove a book from my reading list",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001600,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "The book is removed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "End to End Tests for",
+    "description": "Description : The purpose of these test are to cover End to End happy flows for customer\n\nBook Store Swagger URL: http://bookstore.toolsqa.com/swagger/index.html",
+    "id": "end-to-end-tests-for",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/functions/test.feature",
+    "tags": []
+  }
+]
