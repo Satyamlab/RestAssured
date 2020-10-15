@@ -4,7 +4,9 @@ public class Route {
 	 
     private static final String BOOKSTORE = "/BookStore";
     private static final String ACCOUNT = "/Account";
-    private static final String VERSION = "/v1";
+//    private static final String VERSION = "/v1";
+    
+    private static String VERSION = System.getenv("ENV");
     
     
     public static String generateToken(){
