@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-15T13:16:57Z" name="Suite" finished-at="2020-10-15T13:17:01Z" duration-ms="3907">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.runner@37271612]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2020-10-15T13:16:57Z" name="class1" finished-at="2020-10-15T13:17:01Z" duration-ms="3907">
+      <class name="Runners.runner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runners.runner@37271612]" started-at="2020-10-15T13:16:57Z" name="setUpClass" finished-at="2020-10-15T13:16:57Z" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.runner@37271612]" started-at="2020-10-15T13:16:57Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-15T13:17:01Z" duration-ms="3530" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Authorise user is able to Add and Remove a book"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[End to End Tests for]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Authentication Failed. Content of failed Response: io.restassured.internal.RestAssuredResponseImpl@2ec99035 , Status Code : 302]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Authentication Failed. Content of failed Response: io.restassured.internal.RestAssuredResponseImpl@2ec99035 , Status Code : 302
+at apiEngine.endPoints.EndPoints.authenticateUser(EndPoints.java:29)
+at stepDefination.defination.i_am_an_authorise_user(defination.java:33)
+at ✽.I am an authorise user(file:///C:/Users/satya.SATYAM/eclipse-workspace/RestAssured/src/test/resources/functions/test.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.runner@37271612]" started-at="2020-10-15T13:17:01Z" name="tearDownClass" finished-at="2020-10-15T13:17:01Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runners.runner -->
+    </test> <!-- class1 -->
+  </suite> <!-- Suite -->
+</testng-results>

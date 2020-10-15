@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-15T18:16:43 IST" name="Suite" finished-at="2020-10-15T18:16:47 IST" duration-ms="3588">
+  <suite started-at="2020-10-15T18:32:27 IST" name="Suite" finished-at="2020-10-15T18:32:31 IST" duration-ms="3964">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.runner@5717c37]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2020-10-15T18:16:43 IST" name="class1" finished-at="2020-10-15T18:16:47 IST" duration-ms="3588">
+    <test started-at="2020-10-15T18:32:27 IST" name="class1" finished-at="2020-10-15T18:32:31 IST" duration-ms="3964">
       <class name="Runners.runner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runners.runner@5717c37]" started-at="2020-10-15T18:16:43 IST" name="setUpClass" finished-at="2020-10-15T18:16:44 IST" duration-ms="337" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runners.runner@5717c37]" started-at="2020-10-15T18:32:27 IST" name="setUpClass" finished-at="2020-10-15T18:32:28 IST" duration-ms="488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.runner@5717c37]" started-at="2020-10-15T18:16:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-15T18:16:47 IST" duration-ms="3180" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.runner@5717c37]" started-at="2020-10-15T18:32:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-15T18:32:31 IST" duration-ms="3417" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.RuntimeException: Authentication Failed. Content of failed Response: io.restassured.internal.RestAssuredResponseImpl@75d366c2 , Status Code : 302
 at apiEngine.endPoints.EndPoints.authenticateUser(EndPoints.java:29)
-at stepDefination.defination.i_am_an_authorise_user(defination.java:35)
+at stepDefination.defination.i_am_an_authorise_user(defination.java:33)
 at ✽.I am an authorise user(file:///C:/Users/satya.SATYAM/eclipse-workspace/RestAssured/src/test/resources/functions/test.feature:8)
 ]]>
             </full-stacktrace>
@@ -42,7 +42,7 @@ at ✽.I am an authorise user(file:///C:/Users/satya.SATYAM/eclipse-workspace/Re
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.runner@5717c37]" started-at="2020-10-15T18:16:47 IST" name="tearDownClass" finished-at="2020-10-15T18:16:47 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.runner@5717c37]" started-at="2020-10-15T18:32:31 IST" name="tearDownClass" finished-at="2020-10-15T18:32:31 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
