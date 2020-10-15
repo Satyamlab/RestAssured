@@ -6,8 +6,7 @@ public class Route {
     private static final String ACCOUNT = "/Account";
 //    private static final String VERSION = "/v1";
     
-    private static String VERSION = System.getenv("ENV");
-    
+    public static String VERSION = System.getenv("ENV");
     
     public static String generateToken(){
     	return ACCOUNT + VERSION + "/GenerateToken";
