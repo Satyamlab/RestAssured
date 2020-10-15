@@ -11,7 +11,10 @@ public class Route {
     public Route(){
     	if(System.getenv("ENV")==null) {
     		VERSION = Base.Property("Version");;
-    	}    	
+    	}
+    	else {
+    		VERSION = System.getenv("ENV");
+    	}
     }
     
     public static String generateToken(){
