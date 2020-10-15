@@ -33,7 +33,6 @@ public class defination {
 		endPoints = new EndPoints(BaseUrl);
 		AuthorizationRequest authRequest = new AuthorizationRequest(USERNAME,PASSWORD);
 		endPoints.authenticateUser(authRequest);
-		System.out.println(Route.VERSION);
 	}
 
 	@Given("A list of book are available")

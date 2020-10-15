@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>class1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 12 22:34:26 IST 2020</td>
+<td>Started on:</td><td>Thu Oct 15 18:16:43 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11655 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3588 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Runners.runner.runScenario()'><b>runScenario</b><br>Test class: Runners.runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Authorise user is able to Add and Remove a book", "Optional[End to End Tests for]"</td>
-<td></td>
-<td>10</td>
+<td><div><pre>java.lang.RuntimeException: Authentication Failed. Content of failed Response: io.restassured.internal.RestAssuredResponseImpl@75d366c2 , Status Code : 302
+	at apiEngine.endPoints.EndPoints.authenticateUser(EndPoints.java:29)
+	at stepDefination.defination.i_am_an_authorise_user(defination.java:35)
+	at ?.I am an authorise user(file:///C:/Users/satya.SATYAM/eclipse-workspace/RestAssured/src/test/resources/functions/test.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1593749783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1593749783'><pre>java.lang.RuntimeException: Authentication Failed. Content of failed Response: io.restassured.internal.RestAssuredResponseImpl@75d366c2 , Status Code : 302
+	at apiEngine.endPoints.EndPoints.authenticateUser(EndPoints.java:29)
+	at stepDefination.defination.i_am_an_authorise_user(defination.java:35)
+	at ?.I am an authorise user(file:///C:/Users/satya.SATYAM/eclipse-workspace/RestAssured/src/test/resources/functions/test.feature:8)
+</pre></div></td>
+<td>3</td>
 <td>Runners.runner@5717c37</td></tr>
 </table><p>
 </body>
