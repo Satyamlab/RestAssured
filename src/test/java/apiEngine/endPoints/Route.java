@@ -1,12 +1,18 @@
 package apiEngine.endPoints;
 
+import Base.Base;
+
 public class Route {
 	 
     private static final String BOOKSTORE = "/BookStore";
     private static final String ACCOUNT = "/Account";
-//    private static final String VERSION = "/v1";
-    
-    public static String VERSION = System.getenv("ENV");
+    private static String VERSION;
+   
+    public Route(){
+    	if(System.getenv("ENV")==null) {
+    		VERSION = Base.Property("Version");;
+    	}    	
+    }
     
     public static String generateToken(){
     	return ACCOUNT + VERSION + "/GenerateToken";
@@ -22,6 +28,5 @@ public class Route {
  
     public static String userAccount(String userId){
     	return ACCOUNT + VERSION + "/User" + "/" + userId; 
-    }
- 
+    } 
 }

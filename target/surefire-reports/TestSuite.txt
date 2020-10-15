@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.899 s <<< FAILURE! - in TestSuite
-Runners.runner.runScenario["Authorise user is able to Add and Remove a book", "Optional[End to End Tests for]"](1)  Time elapsed: 3.54 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.854 s <<< FAILURE! - in TestSuite
+Runners.runner.runScenario["Authorise user is able to Add and Remove a book", "Optional[End to End Tests for]"](1)  Time elapsed: 4.597 s  <<< FAILURE!
 java.lang.RuntimeException: Authentication Failed. Content of failed Response: io.restassured.internal.RestAssuredResponseImpl@2ec99035 , Status Code : 302
 

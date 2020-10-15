@@ -20,11 +20,11 @@ public class EndPoints {
 	        RestAssured.baseURI = baseUrl;
 	        request = RestAssured.given();
 	        request.header("Content-Type", "application/json");
+	        new Route();
 	    }
 	 	 
 	 public void authenticateUser(AuthorizationRequest authRequest) {
 	        Response response = request.body(authRequest).post(Route.generateToken());
-			System.out.println("Env is :"+Route.VERSION);
 	        if (response.statusCode() != HttpStatus.SC_OK)
 	            throw new RuntimeException("Authentication Failed. Content of failed Response: " + response.toString() + " , Status Code : " + response.statusCode());
 	 
